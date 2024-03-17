@@ -1,6 +1,9 @@
 @tool
 extends HSlider
 
+## Horizontal slider with better support for joystick and dpad
+class_name HSliderGamepad
+
 @export var slider_speed: float = 2
 @export var dpad_step: int = 5
 @export var joystick_discrete: bool = false
