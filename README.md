@@ -4,10 +4,10 @@ Custom nodes to have better joystick and dpad support on sliders.
 
 ## Features
 
-- Smooth joystick: hold the joystick in one direction and the slider value adjust smoothly
-- Discrete joystick: the joystick acts as a button, only updating the value by one each "press"
-- Smooth & discrete: joystick is in discrete mode, until you hold the direction for more than a threshold time when it switches to smooth
-- Dpad steps: dpad can modify the value configurable steps instead of the default 1 step
+- **Smooth joystick**: hold the joystick in one direction and the slider value adjust smoothly
+- **Discrete joystick**: the joystick acts as a button, only updating the value by one each "press"
+- **Smooth & discrete**: joystick is in discrete mode, until you hold the direction for more than a threshold time when it switches to smooth
+- **Dpad steps**: dpad can modify the value configurable steps instead of the default 1 step
 
 ## How to use
 
