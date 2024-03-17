@@ -1,8 +1,18 @@
-[gd_scene load_steps=4 format=3 uid="uid://dear4k4o15uui"]
+[gd_scene load_steps=6 format=3 uid="uid://dear4k4o15uui"]
 
 [ext_resource type="Script" path="res://demo/demo_scene.gd" id="1_br8en"]
 [ext_resource type="Script" path="res://addons/slidergamepad/hslider_gamepad.gd" id="3_7kb5c"]
 [ext_resource type="Script" path="res://addons/slidergamepad/vslider_gamepad.gd" id="3_iwylt"]
+
+[sub_resource type="Gradient" id="Gradient_yd3es"]
+interpolation_mode = 2
+colors = PackedColorArray(0.4004, 0.498073, 0.52, 1, 0.138636, 0.288389, 0.32165, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_kwl2d"]
+gradient = SubResource("Gradient_yd3es")
+width = 256
+height = 256
+fill_to = Vector2(1, 1)
 
 [node name="DemoScene" type="Control"]
 layout_mode = 3
@@ -12,6 +22,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_br8en")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_kwl2d")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
