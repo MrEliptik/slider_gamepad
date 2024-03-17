@@ -1,0 +1,121 @@
+[gd_scene load_steps=4 format=3 uid="uid://dear4k4o15uui"]
+
+[ext_resource type="Script" path="res://demo/demo_scene.gd" id="1_br8en"]
+[ext_resource type="Script" path="res://demo/slider_joystick.gd" id="2_nrn1x"]
+[ext_resource type="Script" path="res://addons/slidergamepad/slider_gamepad.gd" id="3_7kb5c"]
+
+[node name="DemoScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_br8en")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -232.0
+offset_top = -211.0
+offset_right = 232.0
+offset_bottom = 211.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "Smooth slider"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="SmoothSlider" type="HSlider" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+step = 0.0
+script = ExtResource("2_nrn1x")
+
+[node name="SmoothValue" type="Label" parent="VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "100"
+vertical_alignment = 1
+
+[node name="VSeparator" type="VSeparator" parent="VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "Stepped slider"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="SteppedSlider" type="HSlider" parent="VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+max_value = 2.0
+tick_count = 3
+ticks_on_borders = true
+script = ExtResource("2_nrn1x")
+joystick_discrete = true
+dpad_step = 1
+
+[node name="SteppedValue" type="Label" parent="VBoxContainer/HBoxContainer2"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "2"
+vertical_alignment = 1
+
+[node name="VSeparator2" type="VSeparator" parent="VBoxContainer"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(0, 25)
+layout_mode = 2
+
+[node name="Label3" type="Label" parent="VBoxContainer"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "Stepped slider"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="SliderGamepad" type="HSlider" parent="VBoxContainer/HBoxContainer3"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 1
+max_value = 9.0
+tick_count = 10
+ticks_on_borders = true
+script = ExtResource("3_7kb5c")
+joystick_discrete = true
+
+[node name="SteppedValue" type="Label" parent="VBoxContainer/HBoxContainer3"]
+custom_minimum_size = Vector2(50, 0)
+layout_mode = 2
+text = "2"
+vertical_alignment = 1
+
+[connection signal="gui_input" from="VBoxContainer/HBoxContainer/SmoothSlider" to="VBoxContainer/HBoxContainer/SmoothSlider" method="_on_gui_input"]
+[connection signal="value_changed" from="VBoxContainer/HBoxContainer/SmoothSlider" to="." method="_on_smooth_slider_value_changed"]
+[connection signal="value_changed" from="VBoxContainer/HBoxContainer2/SteppedSlider" to="." method="_on_stepped_slider_value_changed"]

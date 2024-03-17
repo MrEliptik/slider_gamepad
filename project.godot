@@ -1,0 +1,12 @@
+config_version=5
+
+[application]
+
+config/name="slider_joystick"
+config/features=PackedStringArray("4.2", "Forward Plus")
+config/icon="res://icon.svg"
+config/tags=PackedStringArray("addon")
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/slidergamepad/plugin.cfg")
