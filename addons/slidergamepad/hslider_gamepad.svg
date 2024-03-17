@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+    <g transform="matrix(0.0163265,0,0,0.0188457,-9.92653,44.0047)">
+        <rect id="HSliderGamepad" x="608" y="-2335" width="980" height="849" style="fill:none;"/>
+        <g id="HSliderGamepad1" serif:id="HSliderGamepad">
+            <g id="HSlider.svg" transform="matrix(61.25,0,0,53.0625,1098,-1910.5)">
+                <g transform="matrix(1,0,0,1,-8,-8)">
+                    <path d="M1,11C1,12.097 1.903,13 3,13C4.097,13 5,12.097 5,11C5,9.903 4.097,9 3,9C1.903,9 1,9.903 1,11ZM1,6C1,6.549 1.451,7 2,7C2.549,7 3,6.549 3,6L3,4C3,3.451 2.549,3 2,3C1.451,3 1,3.451 1,4L1,6ZM6.867,10C7.036,10.656 7.036,11.344 6.867,12L13.997,12C14.546,12 14.997,11.549 14.997,11C14.997,10.451 14.546,10 13.997,10L6.867,10ZM13,6C13,6.549 13.451,7 14,7C14.549,7 15,6.549 15,6L15,4C15,3.451 14.549,3 14,3C13.451,3 13,3.451 13,4L13,6Z" style="fill:rgb(142,239,151);fill-rule:nonzero;"/>
+                </g>
+            </g>
+            <g transform="matrix(40.8333,0,0,35.375,1281.75,-2901)">
+                <circle cx="-4.5" cy="23.5" r="4.5" style="fill:rgb(0,48,41);fill-opacity:0;stroke:rgb(142,239,151);stroke-width:1.5px;"/>
+                <g transform="matrix(0.555556,0,0,0.555556,-2,10.4444)">
+                    <circle cx="-4.5" cy="23.5" r="4.5" style="fill:rgb(142,239,151);stroke:rgb(142,239,151);stroke-opacity:0;stroke-width:2.7px;"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
