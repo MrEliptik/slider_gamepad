@@ -2,7 +2,8 @@
 extends EditorPlugin
 
 func _enter_tree():
-	add_custom_type("SliderGamepad", "HSlider", preload("res://addons/slidergamepad/slider_gamepad.gd"), preload("res://icon.svg"))
+	add_custom_type("HSliderGamepad", "HSlider", preload("res://addons/slidergamepad/hslider_gamepad.gd"), preload("res://icon.svg"))
+	add_custom_type("VSliderGamepad", "VSlider", preload("res://addons/slidergamepad/vslider_gamepad.gd"), preload("res://icon.svg"))
 
 func _exit_tree():
 	# Clean-up of the plugin goes here.
