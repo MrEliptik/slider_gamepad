@@ -2,6 +2,10 @@
 
 Custom nodes to have better joystick and dpad support on sliders.
 
+<p align="center">
+  <img src="media/slider_gamepad.gif" width="500">
+</p>
+
 ## Features
 
 - **Smooth joystick**: hold the joystick in one direction and the slider value adjust smoothly
@@ -18,7 +22,9 @@ The dpad discrete function reacts directly to the **InputEventJoypadButton**
 
 Add a node as you normally do and choose either HSliderGamepad or VSliderGamepad depending on your needs
 
-![Add node](media/add_node.png)
+<p align="center">
+  <img src="media/add_node.png" width="500">
+</p>
 
 **Step 2: Setup the node**
 
@@ -27,7 +33,9 @@ Add a node as you normally do and choose either HSliderGamepad or VSliderGamepad
 - **Joystick discrete**: sets the joystick in discrete mode
 - **Joystick smooth discrete threshold**: time in seconds after which the joystick will switch to smooth when held in one direction (requires joystick to be set to discrete mode)
 
-![Add node](media/node_setup.png)
+<p align="center">
+  <img src="media/node_setup.png" width="500">
+</p>
 
 ## 💁‍♂️ About me
 
