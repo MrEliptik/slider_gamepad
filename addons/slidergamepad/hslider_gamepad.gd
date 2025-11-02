@@ -5,7 +5,7 @@ extends HSlider
 class_name HSliderGamepad
 
 @export var slider_speed: float = 2
-@export var dpad_step: int = 5
+@export var dpad_step: float = 5
 @export var joystick_discrete: bool = false
 # If set above 0, enables smooth discrete
 @export var joystick_smooth_discrete_threshold: float = 0.0
@@ -20,10 +20,9 @@ func _ready() -> void:
 	# Connect the event
 	gui_input.connect(_on_gui_input)
 
-func _process(delta: float) -> void:
+func _physics_process(_delta) -> void:
 	if sliding_dir == 0: return
-	
-	value += ceil(slider_speed * delta) * sliding_dir
+	value += slider_speed * sliding_dir
 
 func handle_joystick(event: InputEvent) -> void:
 	if not event is InputEventJoypadMotion: return
