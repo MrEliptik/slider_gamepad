@@ -40,6 +40,8 @@ func handle_joystick(event: InputEvent) -> void:
 	elif event.is_action_released("ui_down", true) or event.is_action_released("ui_up", true):
 		sliding_dir = 0.0
 		get_viewport().set_input_as_handled()
+	elif event.is_action_pressed("ui_right") or event.is_action_pressed("ui_left"):
+		sliding_dir = 0.0
 
 func handle_joystick_discrete(event: InputEvent) -> void:
 	if not event is InputEventJoypadMotion: return
